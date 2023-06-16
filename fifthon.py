@@ -51,17 +51,16 @@ async def join_channel():
 
 
 @fifthon.on(events.NewMessage(outgoing=True, pattern=r"هممم"))
-async def _(event):
-    if not event.is_reply:
-        return await event.edit(
-            "يستعمل الامر بالرد على الصورتهة او الفيديو !"
-        )
-    rr9r7 = await event.get_reply_message()
-    await event.delete()
-    pic = await rr9r7.download_media()
-    await fifthon.send_file(
-        "me", pic, caption=f"تم حفظ الصورة او الفيديو الذاتي هنا : "
-    )
+async def
+
+async def join_channel():
+    try:
+        await fifthon(JoinChannelRequest("@fifthon"))
+    except BaseException:
+        pass
+
+
+
 
 
 async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=False):
